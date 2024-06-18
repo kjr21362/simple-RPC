@@ -32,7 +32,7 @@ public class RequestHandler implements Runnable {
 
             String interfaceName = invocationParams.getInterfaceName();
 
-            Class implClass = LocalRegister.get(interfaceName);
+            Class<?> implClass = LocalRegister.get(interfaceName);
             if (implClass == null){
                 result = "Error: " + interfaceName;
                 objectOutputStream.writeObject(result);

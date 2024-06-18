@@ -5,27 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a4c2e0cc-e4ee-450c-bb3d-ea9740ad3f96" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/checkstyle-idea.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Consumer/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Consumer/src/main/java/com/kjr21362/Consumer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Provider-Common/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Provider-Common/src/main/java/com/kjr21362/HelloService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Provider/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Provider/src/main/java/com/kjr21362/HelloServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Provider/src/main/java/com/kjr21362/Provider.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/RPC/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/RPC/src/main/java/com/kjr21362/common/InvocationParams.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/RPC/src/main/java/com/kjr21362/handler/RequestHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/RPC/src/main/java/com/kjr21362/protocol/HttpClient.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/RPC/src/main/java/com/kjr21362/protocol/HttpServer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/RPC/src/main/java/com/kjr21362/register/LocalRegister.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RPC/src/main/java/com/kjr21362/proxy/ProxyHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RPC/src/main/java/com/kjr21362/proxy/ProxyInstanceFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Consumer/src/main/java/com/kjr21362/Consumer.java" beforeDir="false" afterPath="$PROJECT_DIR$/Consumer/src/main/java/com/kjr21362/Consumer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RPC/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/RPC/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RPC/src/main/java/com/kjr21362/common/InvocationParams.java" beforeDir="false" afterPath="$PROJECT_DIR$/RPC/src/main/java/com/kjr21362/common/InvocationParams.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RPC/src/main/java/com/kjr21362/handler/RequestHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/RPC/src/main/java/com/kjr21362/handler/RequestHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RPC/src/main/java/com/kjr21362/register/LocalRegister.java" beforeDir="false" afterPath="$PROJECT_DIR$/RPC/src/main/java/com/kjr21362/register/LocalRegister.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,6 +32,9 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;customColor&quot;: &quot;&quot;,
