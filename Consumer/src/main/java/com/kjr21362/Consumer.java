@@ -8,5 +8,7 @@ public class Consumer {
         HelloService service = (HelloService) ProxyInstanceFactory.getInstance(HelloService.class);
 
         System.out.println(service.hello("callee"));
+
+        System.out.println(service.add(1, 2));
     }
 }

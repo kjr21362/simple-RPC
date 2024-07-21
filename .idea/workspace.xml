@@ -4,15 +4,26 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a4c2e0cc-e4ee-450c-bb3d-ea9740ad3f96" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/RPC/src/main/java/com/kjr21362/proxy/ProxyHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/RPC/src/main/java/com/kjr21362/proxy/ProxyInstanceFactory.java" afterDir="false" />
+    <list default="true" id="a4c2e0cc-e4ee-450c-bb3d-ea9740ad3f96" name="Changes" comment="add dynamic proxies">
+      <change afterPath="$PROJECT_DIR$/RPC/src/main/java/com/kjr21362/codec/MessageCodec.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RPC/src/main/java/com/kjr21362/codec/RpcProtocolFrameDecoder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RPC/src/main/java/com/kjr21362/codec/TestMessageCodec.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RPC/src/main/java/com/kjr21362/common/Message.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RPC/src/main/java/com/kjr21362/common/RpcRequestMessage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RPC/src/main/java/com/kjr21362/common/RpcResponseMessage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RPC/src/main/java/com/kjr21362/common/SequenceIdGenerator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RPC/src/main/java/com/kjr21362/handler/NettyRequestHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RPC/src/main/java/com/kjr21362/handler/NettyResponseHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RPC/src/main/java/com/kjr21362/protocol/NettyClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RPC/src/main/java/com/kjr21362/protocol/NettyClientManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RPC/src/main/java/com/kjr21362/protocol/NettyServer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Consumer/src/main/java/com/kjr21362/Consumer.java" beforeDir="false" afterPath="$PROJECT_DIR$/Consumer/src/main/java/com/kjr21362/Consumer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Provider-Common/src/main/java/com/kjr21362/HelloService.java" beforeDir="false" afterPath="$PROJECT_DIR$/Provider-Common/src/main/java/com/kjr21362/HelloService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Provider/src/main/java/com/kjr21362/HelloServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/Provider/src/main/java/com/kjr21362/HelloServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Provider/src/main/java/com/kjr21362/Provider.java" beforeDir="false" afterPath="$PROJECT_DIR$/Provider/src/main/java/com/kjr21362/Provider.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/RPC/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/RPC/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RPC/src/main/java/com/kjr21362/common/InvocationParams.java" beforeDir="false" afterPath="$PROJECT_DIR$/RPC/src/main/java/com/kjr21362/common/InvocationParams.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RPC/src/main/java/com/kjr21362/handler/RequestHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/RPC/src/main/java/com/kjr21362/handler/RequestHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RPC/src/main/java/com/kjr21362/register/LocalRegister.java" beforeDir="false" afterPath="$PROJECT_DIR$/RPC/src/main/java/com/kjr21362/register/LocalRegister.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RPC/src/main/java/com/kjr21362/proxy/ProxyHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/RPC/src/main/java/com/kjr21362/proxy/ProxyHandler.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,13 +65,14 @@
     "Application.Main (1).executor": "Run",
     "Application.Main.executor": "Run",
     "Application.Provider.executor": "Run",
+    "Application.TestMessageCodec.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "jdk.selected.JAVA_MODULE": "openjdk-22",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "/Users/Ke/Desktop/simple-rpc",
-    "project.structure.last.edited": "Global Libraries",
+    "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
     "settings.editor.selected.configurable": "editor.preferences.import"
@@ -86,6 +98,19 @@
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.kjr21362.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestMessageCodec" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.kjr21362.codec.TestMessageCodec" />
+      <module name="RPC" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.kjr21362.codec.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -160,6 +185,7 @@
       <list>
         <item itemvalue="Application.Consumer" />
         <item itemvalue="Application.Provider" />
+        <item itemvalue="Application.TestMessageCodec" />
       </list>
     </recent_temporary>
   </component>
@@ -172,9 +198,20 @@
       <option name="presentableId" value="Default" />
       <updated>1718496432332</updated>
     </task>
+    <task id="LOCAL-00001" summary="add dynamic proxies">
+      <option name="closed" value="true" />
+      <created>1718669283897</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1718669283897</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="add dynamic proxies" />
+    <option name="LAST_COMMIT_MESSAGE" value="add dynamic proxies" />
   </component>
 </project>
