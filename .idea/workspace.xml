@@ -5,25 +5,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a4c2e0cc-e4ee-450c-bb3d-ea9740ad3f96" name="Changes" comment="add dynamic proxies">
-      <change afterPath="$PROJECT_DIR$/RPC/src/main/java/com/kjr21362/codec/MessageCodec.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/RPC/src/main/java/com/kjr21362/codec/RpcProtocolFrameDecoder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/RPC/src/main/java/com/kjr21362/codec/TestMessageCodec.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/RPC/src/main/java/com/kjr21362/common/Message.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/RPC/src/main/java/com/kjr21362/common/RpcRequestMessage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/RPC/src/main/java/com/kjr21362/common/RpcResponseMessage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/RPC/src/main/java/com/kjr21362/common/SequenceIdGenerator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/RPC/src/main/java/com/kjr21362/handler/NettyRequestHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/RPC/src/main/java/com/kjr21362/handler/NettyResponseHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/RPC/src/main/java/com/kjr21362/protocol/NettyClient.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/RPC/src/main/java/com/kjr21362/protocol/NettyClientManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/RPC/src/main/java/com/kjr21362/protocol/NettyServer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RPC/src/main/java/com/kjr21362/config/ServiceConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RPC/src/main/java/com/kjr21362/provider/ServiceProvider.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RPC/src/main/java/com/kjr21362/provider/ZookeeperServiceProvider.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RPC/src/main/java/com/kjr21362/register/ServiceRegistry.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RPC/src/main/java/com/kjr21362/register/ZookeeperRegistry.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Consumer/src/main/java/com/kjr21362/Consumer.java" beforeDir="false" afterPath="$PROJECT_DIR$/Consumer/src/main/java/com/kjr21362/Consumer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Provider-Common/src/main/java/com/kjr21362/HelloService.java" beforeDir="false" afterPath="$PROJECT_DIR$/Provider-Common/src/main/java/com/kjr21362/HelloService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Provider/src/main/java/com/kjr21362/HelloServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/Provider/src/main/java/com/kjr21362/HelloServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Provider/src/main/java/com/kjr21362/Provider.java" beforeDir="false" afterPath="$PROJECT_DIR$/Provider/src/main/java/com/kjr21362/Provider.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/RPC/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/RPC/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RPC/src/main/java/com/kjr21362/proxy/ProxyHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/RPC/src/main/java/com/kjr21362/proxy/ProxyHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RPC/src/main/java/com/kjr21362/handler/NettyRequestHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/RPC/src/main/java/com/kjr21362/handler/NettyRequestHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RPC/src/main/java/com/kjr21362/handler/RequestHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/RPC/src/main/java/com/kjr21362/handler/RequestHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RPC/src/main/java/com/kjr21362/protocol/NettyClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/RPC/src/main/java/com/kjr21362/protocol/NettyClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RPC/src/main/java/com/kjr21362/protocol/NettyClientManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/RPC/src/main/java/com/kjr21362/protocol/NettyClientManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RPC/src/main/java/com/kjr21362/register/LocalRegister.java" beforeDir="false" afterPath="$PROJECT_DIR$/RPC/src/main/java/com/kjr21362/register/LocalRegistry.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,26 +52,26 @@
   <component name="ProjectViewState">
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "Application.Consumer.executor": "Run",
-    "Application.Main (1).executor": "Run",
-    "Application.Main.executor": "Run",
-    "Application.Provider.executor": "Run",
-    "Application.TestMessageCodec.executor": "Run",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "jdk.selected.JAVA_MODULE": "openjdk-22",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/Users/Ke/Desktop/simple-rpc",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "editor.preferences.import"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;Application.Consumer.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Main (1).executor&quot;: &quot;Run&quot;,
+    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Provider.executor&quot;: &quot;Run&quot;,
+    &quot;Application.TestMessageCodec.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;openjdk-22&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/Ke/Desktop/simple-rpc&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;editor.preferences.import&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected="Application.Consumer">
     <configuration name="Consumer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.kjr21362.Consumer" />

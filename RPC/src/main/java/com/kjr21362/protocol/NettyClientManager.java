@@ -13,9 +13,12 @@ import io.netty.channel.socket.SocketChannel;
 import io.netty.channel.socket.nio.NioSocketChannel;
 import io.netty.handler.logging.LogLevel;
 import io.netty.handler.logging.LoggingHandler;
+import java.net.InetSocketAddress;
+import lombok.Getter;
 import lombok.extern.slf4j.Slf4j;
 
 @Slf4j
+@Getter
 public class NettyClientManager {
 
     private final String host;
@@ -29,7 +32,7 @@ public class NettyClientManager {
         this.port = port;
     }
 
-    public Channel getChannel() {
+    public Channel getChannel(InetSocketAddress inetSocketAddress) {
         if (channel != null) {
             return channel;
         }
@@ -39,12 +42,12 @@ public class NettyClientManager {
                 return channel;
             }
 
-            init();
+            init(inetSocketAddress);
             return channel;
         }
     }
 
-    private void init() {
+    private void init(InetSocketAddress inetSocketAddress) {
         EventLoopGroup workerGroup = new NioEventLoopGroup();
 
         try {
@@ -63,7 +66,7 @@ public class NettyClientManager {
                 }
             });
 
-            channel = b.connect(host, port).sync().channel();
+            channel = b.connect(inetSocketAddress).sync().channel();
             channel.closeFuture().addListener(_ -> workerGroup.shutdownGracefully());
 
         } catch (InterruptedException e) {

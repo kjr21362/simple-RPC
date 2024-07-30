@@ -1,7 +1,7 @@
 package com.kjr21362.handler;
 
 import com.kjr21362.common.InvocationParams;
-import com.kjr21362.register.LocalRegister;
+import com.kjr21362.register.LocalRegistry;
 import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
 import java.lang.reflect.Method;
@@ -32,7 +32,7 @@ public class RequestHandler implements Runnable {
 
             String interfaceName = invocationParams.getInterfaceName();
 
-            Class<?> implClass = LocalRegister.get(interfaceName);
+            Class<?> implClass = LocalRegistry.get(interfaceName);
             if (implClass == null){
                 result = "Error: " + interfaceName;
                 objectOutputStream.writeObject(result);

@@ -3,7 +3,7 @@ package com.kjr21362.register;
 import java.util.HashMap;
 import java.util.Map;
 
-public class LocalRegister {
+public class LocalRegistry {
 
     public static Map<String, Class<?>> registeredServices = new HashMap<>();
 
